@@ -1,0 +1,48 @@
+{% extends "app1/home.html" %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> ~ Users ~</title>
+</head>
+<body>
+
+ 
+
+{% block body_block %}
+
+
+<center>
+      <h1> <strong> ~ User's Data ~ </strong> </h1>	
+
+<table class="table table-info table-striped">
+<thead>
+<th >ENO</th>
+<th >ENAME</th>
+<th >ESAL</th>
+<th >EADD</th>
+</thead>
+
+
+{% for i in e %}
+<tr>
+<td>{{i.eno}}</td>
+<td>{{i.ename}}</td>
+<td>{{i.esal}}</td>
+<td>{{i.eadd}}</td>
+
+ </tr>
+
+{% endfor %}
+</table>
+
+<button type="submit" class="btn btn-primary">Add User Details</button>
+
+</center>
+
+
+
+
+{% endblock %}
+</body>
+</html>

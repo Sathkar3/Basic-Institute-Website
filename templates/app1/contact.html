@@ -1,0 +1,51 @@
+{% extends "app1/home.html" %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact US</title>
+</head>
+<body>
+
+{% block body_block %}
+
+<center> <h2> <strong> ~ Contact Us ~ </strong> </h2>
+	<hr>
+
+<form method="POST">
+
+	{%csrf_token%}
+	{{f.as_p}}
+
+     
+	<button type="submit" class="btn btn-primary">Submit</button>
+
+
+ 
+</form>
+<hr>
+
+ <h2> MAP </h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.324519753781!2d78.38233151459767!3d17.444175005756986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91ccfcc03719%3A0x3bdad63be131270f!2sELearn%20InfoTech%20-%20Python%20with%20Django%20Course%20%7C%20Python%20Training%20Institute%20in%20Hyderabad!5e0!3m2!1sen!2sin!4v1665337553478!5m2!1sen!2sin" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<div class="card text-white bg-info mb-3" style="max-width: 300rem;">
+  <div class="card-header">Address</div>
+  <div class="card-body">
+    <h3 class="card-title">Elearn Infotech</h3>
+    <h3 class="card-text">Plot no.40 second floor,
+ 
+Vittal Rao Nagar,
+ 
+Madhapur, Hyderabad
+ 
+Telangana 500081</h3>
+  </div>
+</div>
+
+</center>
+
+{% endblock %}
+
+</body>
+</html>   

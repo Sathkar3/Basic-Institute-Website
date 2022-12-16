@@ -1,0 +1,58 @@
+{% extends "app1/home.html" %}
+
+{% block body_block %}
+
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> <strong> Gallery </strong> </title>
+
+<link rel = "stylesheet" href = "{%static "css/style.css" %}" >
+
+</head>
+<body>
+<center> <h1> ~ GALLERY ~ </h1> 
+  
+
+	<img src = "{%static "/images/dj.jpg" %}" >
+
+	<img src = "{%static "/images/dj2.jpg" %}" >
+
+	<img src = "{%static "/images/dj10.jpg" %}" >
+
+	<img src = "{%static "/images/dj6.jpg" %}" >
+
+	<img src = "{%static "/images/dj9.jpg" %}" >
+
+	<img src = "{%static "/images/dj7.jpg" %}" > 
+
+	<img src = "{%static "/images/dj4.jpg" %}" >
+
+	<img src = "{%static "/images/dj3.jpg" %}" >
+
+	<img src = "{%static "/images/dj8.jpg" %}" >
+
+
+
+
+<div class="card text-white bg-info mb-3" style="max-width: 300rem;">
+  <div class="card-header"></div>
+  <div class="card-body">
+    <h3 class="card-title">Elearn Infotech</h3>
+    <p class="card-text">
+ <h4> © 2005-2022 Django Software Foundation and individual contributors. Django is a registered trademark of the Django Software Foundation. </h4>
+
+</p>
+  </div>
+</div>
+</center>
+
+
+{% endblock %}
+
+</body>
+</html>

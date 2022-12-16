@@ -1,0 +1,52 @@
+{% extends "app1/home.html" %}
+
+{% block body_block %}
+
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Services</title>
+
+	<link rel = "stylesheet" href = "{%static "css/style.css" %}" >
+
+</head>
+<body>     
+<center> <h1>  <STRONG> ~ SERVICES ~ </STRONG> </h1> 
+  
+          
+  
+  <h2> Contribution Guide:</h2>
+    <h3> * You'd like to contribute to Django but don't know how? This document will explain our process and how to get involved.</h3>
+    <div>&nbsp;</div>
+<h2> "Easy Pickings" : </h2>
+    <h3>* First time contributor and you're looking for something manageable? The "easy pickings" list is a good start. </h3>
+<h2> Security Policy : </h2>
+    <h3>* You found a security issue in Django? You'd like to know more about our security policy? It's all in there.
+<h2> GitHub : </h2>
+    <h3>* Want to peek under the hood and see Django's source code, file or help review a pull request? It's all on GitHub.
+<h2> Django Dashboard : </h2>
+    <h3>* Confused about Trac's filtering system? This dashboard shows easy-to-read metrics and has links to pre-set filters to get you started.
+<h2> Django-dev IRC channel : </h2>
+    <h3>* Questions about a ticket? Stuck on how to write a unit test for your pull request? Come chat with us! </h3>
+<hr>
+
+<div class="card text-white bg-info mb-3" style="max-width: 300rem;">
+  <div class="card-header"></div>
+  <div class="card-body">
+    <h3 class="card-title">Elearn Infotech</h3>
+    <p class="card-text">
+ <h4> © 2005-2022 Django Software Foundation and individual contributors. Django is a registered trademark of the Django Software Foundation. </h4>
+
+</p>
+  </div>
+</div>
+
+</center>
+{% endblock %}
+
+</body>
+</html>

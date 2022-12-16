@@ -1,0 +1,72 @@
+{% extends "app1/home.html" %}
+
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+
+<link rel = "stylesheet" href = "{%static "css/style.css" %}" >
+
+</head>
+<body>
+	{% block body_block %}
+<center> 
+	<h1> <strong>~ ABOUT US ~</strong> </h1>
+
+	<img src = "{%static "/images/dj4.jpg" %}" >
+  <hr>
+	<h2> About the Django Software Foundation </h2>
+
+<h3> Development of Django is supported by an independent foundation established as a 501(c)(3) non-profit. Like most open-source foundations, the goal of the Django Software Foundation is to promote, support, and advance its open-source project: in our case, the Django Web framework. </h3>
+
+<hr>
+
+
+<h2> The foundation's goals are to: </h2>
+
+    <h3> * Support development of Django by sponsoring sprints, meetups, gatherings and community events.
+    * Promote the use of Django among the world-wide Web development community.
+    * Protect the intellectual property and the framework's long-term viability.
+    * Advance the state of the art in Web development. </h3>
+
+
+<hr>
+
+<h2> Why Choose Us ? </h2>
+
+ <h3> * Quality of Training as per International Standards.
+
+* Provide Real time Training with Live Project.
+
+ * Students satisfaction is the ultimate goal for us.
+
+ * Business ethics is more important than money.
+
+ * Help students to reach their true potential with Personality Development.
+
+ * Help students to become entrepreneurs with motivation and support. </h3>
+
+
+  <hr>
+
+<div class="card text-white bg-info mb-3" style="max-width: 300rem;">
+  <div class="card-header"></div>
+  <div class="card-body">
+    <h3 class="card-title">Elearn Infotech</h3>
+    <p class="card-text">
+ <h4> © 2005-2022 Django Software Foundation and individual contributors. Django is a registered trademark of the Django Software Foundation. </h4>
+
+</p>
+  </div>
+</div>
+
+</center>  
+
+{% endblock %}
+
+</body>
+</html>
